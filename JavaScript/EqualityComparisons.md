@@ -159,10 +159,9 @@ Two values are the same if one of the following holds:
 * both null
 * both true or both false
 * both strings of the same length with the same characters
-
-*both the same object
-*both numbers and
-**both +0
-**both -0
-**both NaN
-**or both non-zero and both not NaN and both have the same value
+* both the same object
+* both numbers and
+** both +0
+** both -0
+** both NaN
+** or both non-zero and both not NaN and both have the same value
