@@ -47,7 +47,6 @@ Changes in strict mode
 1.  strict mode prohibits with.
 2.  eval of strict mode code does not introduce new variables into the surrounding scope.
 3.  strict mode forbids deleting plain names. delete name in strict mode is a syntax error:
-4.  
 
 ##Making eval and arguments simpler
 1.  the names eval and arguments can't be bound or assigned in language syntax. All these attempts to do so are syntax errors:
@@ -59,7 +58,6 @@ Changes in strict mode
 1. the value passed as this to a function in strict mode isn't boxed into an object. 
 2. in strict mode it's no longer possible to "walk" the JavaScript stack via commonly-implemented extensions to ECMAScript.
 3. arguments for strict mode functions no longer provide access to the corresponding function call's variables.
-4. 
 
 ##Paving the way for future ECMAScript versions
 1.  in strict mode a short list of identifiers become reserved keywords. **These words are implements, interface, let, package, private, protected, public, static, and yield.**
