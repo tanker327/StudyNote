@@ -156,9 +156,13 @@ var isSame = Object.is(value1, value2);
 Two values are the same if one of the following holds:
 
 *both undefined
+
 *both null
+
 *both true or both false
+
 *both strings of the same length with the same characters
+
 *both the same object
 *both numbers and
 **both +0
