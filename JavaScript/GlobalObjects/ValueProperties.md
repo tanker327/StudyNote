@@ -103,3 +103,17 @@ The void operator evaluates the given expression and then returns undefined.
 ```js
 void(console.log("sdf")) // this statment will print  'sdf'  then return  a undefined
 ```
+
+
+The void operator is a third alternative.
+```js
+var x;
+if (x === void 0) {
+   // these statements execute
+}
+
+// y has not been defined before
+if (y === void 0) {
+   // throws a ReferenceError (in contrast to `typeof`)
+}
+```
