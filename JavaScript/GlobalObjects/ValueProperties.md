@@ -57,8 +57,33 @@ if(undefined) console.log("sdfsdf")  // undefined  -> undefined works as false i
 undefined || "hello "  // "hello "
 undefined == false // false
 undefined == true  // false
+undefined == NaN  // false
+undefined == null  // true
 ```
 
+### Use typeof to check undefined
 
+```js
+typeof undefined  // "undefined"
+typeof undefined === "undefined"   // true
+
+var x;
+if (typeof x === 'undefined') {
+   // these statements execute
+}
+```
+
+One reason to use typeof is that it does not throw an error if the variable has not been defined.
+
+```js
+// x has not been defined before
+if (typeof x === 'undefined') { // evaluates to true without errors
+   // these statements execute
+}
+
+if(x === undefined){ // throws a ReferenceError
+
+}
+```
 
 
