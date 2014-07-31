@@ -115,3 +115,28 @@ Check table below for detail:
   </tr>
  </tbody>
 </table>
+
+
+* all objects are loosely unequal to undefined and null.
+
+
+```js
+new String("hello")  == new String("hello")  //false
+
+null == undefined  //true
+
+null==null  //true
+null == 0  // false
+null == false // false
+
+undefined == undefined  //true
+undefined == 0 // false
+undefined == false  //false
+
+3 == "3"  //  true
+
+0 == false  // true
+1 == true  // true
+3 == true  // false
+3 == false  //  false
+```
