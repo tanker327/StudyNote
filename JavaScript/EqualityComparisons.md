@@ -27,3 +27,89 @@ null === undefined  //false
 ```
 Strict equality treats NaN as unequal to every other value -- including itself.  
 (The only case in which (x !== x) is true is is when x is NaN.)
+
+
+== (Loose Equality)
+===================
+
+1. Loose equality compares two values for equality, after converting both values to a common type.  
+2. After conversions (one or both sides may undergo conversions), the final equality comparison is performed exactly as === performs it.
+3. 
+
+<table class="standard-table">
+ <thead>
+  <tr>
+   <th scope="row">&nbsp;</th>
+   <th colspan="7" scope="col" style="text-align: center;">Operand B</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <th scope="row">&nbsp;</th>
+   <td>&nbsp;</td>
+   <td style="text-align: center;">Undefined</td>
+   <td style="text-align: center;">Null</td>
+   <td style="text-align: center;">Number</td>
+   <td style="text-align: center;">String</td>
+   <td style="text-align: center;">Boolean</td>
+   <td style="text-align: center;">Object</td>
+  </tr>
+  <tr>
+   <th colspan="1" rowspan="6" scope="row">Operand A</th>
+   <td>Undefined</td>
+   <td style="text-align: center;"><code>true</code></td>
+   <td style="text-align: center;"><code>true</code></td>
+   <td style="text-align: center;"><code>false</code></td>
+   <td style="text-align: center;"><code>false</code></td>
+   <td style="text-align: center;"><code>false</code></td>
+   <td style="text-align: center;"><code>IsFalsy(B)</code></td>
+  </tr>
+  <tr>
+   <td>Null</td>
+   <td style="text-align: center;"><code>true</code></td>
+   <td style="text-align: center;"><code>true</code></td>
+   <td style="text-align: center;"><code>false</code></td>
+   <td style="text-align: center;"><code>false</code></td>
+   <td style="text-align: center;"><code>false</code></td>
+   <td style="text-align: center;"><code>IsFalsy(B)</code></td>
+  </tr>
+  <tr>
+   <td>Number</td>
+   <td style="text-align: center;"><code>false</code></td>
+   <td style="text-align: center;"><code>false</code></td>
+   <td style="text-align: center;"><code>A === B</code></td>
+   <td style="text-align: center;"><code>A === ToNumber(B)</code></td>
+   <td style="text-align: center;"><code>ToNumber(B) === A</code></td>
+   <td style="text-align: center;"><code>ToPrimitive(B) == A</code></td>
+  </tr>
+  <tr>
+   <td>String</td>
+   <td style="text-align: center;"><code>false</code></td>
+   <td style="text-align: center;"><code>false</code></td>
+   <td style="text-align: center;"><code>B === ToNumber(A)</code></td>
+   <td style="text-align: center;"><code>A === B</code></td>
+   <td style="text-align: center;"><code>ToNumber(A) === ToNumber(B)</code></td>
+   <td style="text-align: center;"><code>ToPrimitive(B) == A</code></td>
+  </tr>
+  <tr>
+   <td>Boolean</td>
+   <td style="text-align: center;"><code>false</code></td>
+   <td style="text-align: center;"><code>false</code></td>
+   <td style="text-align: center;"><code>ToNumber(A) === B</code></td>
+   <td style="text-align: center;"><code>ToNumber(A) === ToNumber(B)</code></td>
+   <td style="text-align: center;"><code>A === B</code></td>
+   <td style="text-align: center;"><code>false</code></td>
+  </tr>
+  <tr>
+   <td>Object</td>
+   <td style="text-align: center;"><code>IsFalsy(A)</code></td>
+   <td style="text-align: center;"><code>IsFalsy(A)</code></td>
+   <td style="text-align: center;"><code>ToPrimitive(A) == B</code></td>
+   <td style="text-align: center;"><code>ToPrimitive(A) == B</code></td>
+   <td style="text-align: center;"><code>false</code></td>
+   <td style="text-align: center;">
+    <p><code>A === B</code></p>
+   </td>
+  </tr>
+ </tbody>
+</table>
