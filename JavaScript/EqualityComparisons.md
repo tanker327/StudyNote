@@ -34,7 +34,9 @@ Strict equality treats NaN as unequal to every other value -- including itself.
 
 1. Loose equality compares two values for equality, after converting both values to a common type.  
 2. After conversions (one or both sides may undergo conversions), the final equality comparison is performed exactly as === performs it.
-3. 
+
+
+Check table below for detail:
 
 <table class="standard-table">
  <thead>
