@@ -86,4 +86,16 @@ if(x === undefined){ // throws a ReferenceError
 }
 ```
 
+###void
 
+The void operator evaluates the given expression and then returns undefined.
+
+```html
+<a href="javascript:void(0);">
+  Click here to do nothing
+</a>
+
+<a href="javascript:void(document.body.style.backgroundColor='green');">
+  Click here for green background
+</a>
+```
