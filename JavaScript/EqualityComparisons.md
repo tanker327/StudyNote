@@ -15,7 +15,7 @@ There are three way for **Equality comparisons**
 3. Otherwise, if the values have the same type and are not numbers, they're considered equal if they have the same value.  
 4. Finally, if both values are numbers, they're considered equal if they're both not NaN and are the same value, or if one is +0 and one is -0.
 
-'''js
+```js
 NaN === NaN //false
 
-'''
+```
