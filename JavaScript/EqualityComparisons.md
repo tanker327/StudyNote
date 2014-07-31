@@ -18,4 +18,12 @@ There are three way for **Equality comparisons**
 ```js
 NaN === NaN //false
 {} === {} // false, two object
+"hello" ==="hello" // true
+new String("hello")  === new String("hello")  // false, two object
+0 === "0" //false
+null === null //true
+undefined === undefined //true
+null === undefined  //false
 ```
+Strict equality treats NaN as unequal to every other value -- including itself.  
+(The only case in which (x !== x) is true is is when x is NaN.)
