@@ -1,6 +1,5 @@
 Equality comparisons
 ====================
----
 
 There are three way for **Equality comparisons**
 
@@ -8,7 +7,8 @@ There are three way for **Equality comparisons**
 * === (strict equality)
 * Object.is
 
-#=== (Strict equality)
+=== (Strict equality)
+=====================
 
 1. Neither value is implicitly converted to some other value before being compared. 
 2. If the values have different types, the values are considered unequal.  
