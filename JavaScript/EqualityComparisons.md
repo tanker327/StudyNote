@@ -123,6 +123,8 @@ Check table below for detail:
 ```js
 new String("hello")  == new String("hello")  //false
 
+NaN == NaN  // false
+
 null == undefined  //true
 
 null==null  //true
@@ -165,3 +167,13 @@ Two values are the same if one of the following holds:
   * both -0
   * both NaN
   * or both non-zero and both not NaN and both have the same value
+
+
+```js
+Object.is({},{})  // false
+Object.is(new String("hello"),new String("hello"))  // false
+Object.is([],[])  // false
+Object.is("hello","hello")  // true
+Object.is(null,null)  // true
+Object.is(undefined, undefined)  //  true
+Object.is(NaN, NaN)  // true
