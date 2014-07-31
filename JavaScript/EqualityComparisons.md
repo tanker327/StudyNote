@@ -17,4 +17,5 @@ There are three way for **Equality comparisons**
 
 ```js
 NaN === NaN //false
+{} === {} // false, two object
 ```
