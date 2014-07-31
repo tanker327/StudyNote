@@ -99,3 +99,7 @@ The void operator evaluates the given expression and then returns undefined.
   Click here for green background
 </a>
 ```
+
+```js
+void(console.log("sdf")) // this statment will print  'sdf'  then return  a undefined
+```
