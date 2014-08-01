@@ -6,6 +6,8 @@ Value properties
 The initial value of Infinity is **Number.POSITIVE_INFINITY**. The value Infinity (positive infinity) is greater than any other number. This value behaves mathematically like infinity
 
 ```js
+Object.prototype.toString.call(Infinity)  //"[object Number]"
+
 if(Infinity) console.log("sdfs");  // sdfs -> Infinity works as true in if()
 Infinity ||"asfsdf"  //Infinity -> Infinity works as true in if()
 Infinity == true  // false -> but Infinity is not true
@@ -20,6 +22,8 @@ The global **NaN** property is a value representing Not-A-Number.
 **Equality operator (== and ===) cannot be used to test a value against NaN. Use Number.isNaN() or isNaN() instead.**
 
 ```js
+Object.prototype.toString.call(NaN)  //"[object Number]"
+
 NaN === NaN;        // false
 Number.NaN === NaN; // false
 isNaN(NaN);         // true
@@ -55,6 +59,8 @@ Since **undefined is not a reserved word**, it can be used as an identifier (var
 
 
 ```js
+Object.prototype.toString.call(undefined)  // "[object Undefined]"
+
 undefined == undefined  // true
 undefined === undefined // true
 if(undefined) console.log("sdfsdf")  // undefined  -> undefined works as false in if()
@@ -132,6 +138,7 @@ typeof null        // object (bug in ECMAScript, should be null)
 typeof undefined   // undefined
 null === undefined // false
 null  == undefined // true
+Object.prototype.toString.call(null)  //"[object Null]"
 
 if(null) console.log("sdfsdf")  // undefined  -> undefined works as false in if()
 null || "asdf"  //"asdf"
