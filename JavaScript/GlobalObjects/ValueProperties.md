@@ -9,6 +9,8 @@ The initial value of Infinity is **Number.POSITIVE_INFINITY**. The value Infinit
 if(Infinity) console.log("sdfs");  // sdfs -> Infinity works as true in if()
 Infinity ||"asfsdf"  //Infinity -> Infinity works as true in if()
 Infinity == true  // false -> but Infinity is not true
+
+typeof Infinity  //"number"
 ```
 
 #NaN
@@ -28,6 +30,8 @@ if(NaN) console.log("sdfs");  //  undefined
 NaN ||"asfsdf"   //  "asfsdf"
 NaN == true  // false
 NaN == false  // false
+
+typeof NaN  // "number"
 ```
 
 #undefined
@@ -116,4 +120,23 @@ if (x === void 0) {
 if (y === void 0) {
    // throws a ReferenceError (in contrast to `typeof`)
 }
+```
+
+
+#null
+
+The value null is a JavaScript literal representing null or an "empty" value, i.e. no object value is present. It is one of JavaScript's primitive values.
+
+```js
+typeof null        // object (bug in ECMAScript, should be null)
+typeof undefined   // undefined
+null === undefined // false
+null  == undefined // true
+
+if(null) console.log("sdfsdf")  // undefined  -> undefined works as false in if()
+null || "asdf"  //"asdf"
+null == false  //false
+null == true  //false
+null == undefined  //true
+null ==NaN  //false
 ```
