@@ -1,5 +1,7 @@
 ##commands for mongodb:
 
+
+```js
 mongo  // connent to shell
 
 show dbs  // list all databases
@@ -15,3 +17,4 @@ db.things.find({"a":1})
 for(var i=0; i<10; i++) { db.things.insert({"x":i});}
 
 db.things.find().pretty()
+```
