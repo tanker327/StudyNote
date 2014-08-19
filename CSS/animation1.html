@@ -2,9 +2,33 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Sliding Background Effect on Link Hover</title>
+    <style>
+        ul li a{
+            background-image: linear-gradient(to right, #CCFF33, #CCFF33 30%, transparent 50%, transparent);
+            background-size: 200% 100%;
+            width: 400px;
+            margin: 10px;
+            background-position: 100% 0;
+            transition: all .2s ease-in;
+        }
+        ul li a:hover{
+            background-position: 0 0;
+        }
+        
+    </style>
 </head>
 <body>
+
+<div>
+    <ul>
+        <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,  adipisicing elit. </a></li>
+        <li><a href="#">Lorem ipsum dolo, consectetur adipisicing elit. </a></li>
+        <li><a href="#">it amet, coectetur adipisicing elit. </a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet consectcing elit. </a></li>
+    </ul>
+</div>
 
 </body>
 </html>

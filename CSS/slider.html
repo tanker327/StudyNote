@@ -2,9 +2,76 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Content Slider</title>
+
+    <style>
+        #item1{
+            background-color: #94CBDE;
+        }
+        #item2{
+            background-color: #7292A9;
+        }
+        #item3{
+            background-color: #EF5E2C;
+        }
+        #item4{
+            background-color: #EE4637;
+        }
+        
+        .item{
+            float: left;
+            width: 500px;
+            height: 300px;
+        }
+
+        #stage{
+            width: 500px;
+            height: 300px;
+            border: 1px black dashed;
+            overflow: hidden;
+        }
+
+        .wrapper{
+            width: 2000px;
+            position: relative;
+            transition: left .5s ease-in-out;
+            left 0;
+        }
+
+        #navLink ul{
+            list-style: none;
+        }
+        
+        #navLink ul li{
+            float: left;
+            margin: 10px;
+            padding: 5px;
+            cursor: pointer;
+            border: 4px gray solid;
+        }
+        
+    </style>
+
+    lorem
 </head>
 <body>
+
+<div id="stage">
+    <div class="wrapper">
+        <div id="item1" class="item"></div>
+        <div id="item2" class="item"></div>
+        <div id="item3" class="item"></div>
+        <div id="item4" class="item"></div>
+    </div>
+</div>
+<div id="navLink">
+    <ul>
+        <li class="itemList">1</li>
+        <li class="itemList">2</li>
+        <li class="itemList">3</li>
+        <li class="itemList">4</li>
+    </ul>
+</div>
 
 </body>
 </html>
