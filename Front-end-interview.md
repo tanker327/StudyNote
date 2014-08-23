@@ -27,20 +27,40 @@ The majority of the questions were plucked from an [oksoclap](http://oksoclap.co
 * What did you learn yesterday/this week?
 * What excites or interests you about coding?
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
-* Talk about your preferred development environment. (OS, Editor or IDE, Browsers, Tools etc.)
+* Talk about your preferred development environment. (OS, Editor or IDE, Browsers, Tools etc.)  
+  * Sublime+firbug
+  * webstorm
 * Which version control systems are you familiar with?
+  * Git
 * Can you describe your workflow when you create a web page?
+  * Grunt  --  prototype
+  * integrat with back-end
 * If you have 5 different stylesheets, how would you best integrate them into the site?
   * File concatenation
 * Can you describe the difference between progressive enhancement and graceful degradation?
   * Bonus points for describing feature detection
-* How would you optimize a websites assets/resources?
+* How would you optimize a websites assets/resources?[Check this page for answer](http://www.sitepoint.com/web-site-optimization-steps/)
   * Looking for a number of solutions which can include:
     * File concatenation
     * File minification
     * CDN Hosted
     * Caching
     * etc.
+    * 
+    *
+    * Make fewer HTTP requests
+    * Use a Content Delivery Network
+    * Add an Expires header
+    * Gzip components
+    * Put CSS at the top
+    * Move scripts to the bottom
+    * Avoid CSS expressions
+    * Make JavaScript and CSS external
+    * Reduce DNS lookups
+    * Minify JavaScript
+    * Avoid redirects
+    * Remove duplicate scripts
+    * Configure ETags
 * Traditionally, why has it been better to serve site assets from multiple domains?
   * How many resources will a browser download from a given domain at a time?
   * What are the exceptions?
