@@ -77,8 +77,13 @@ The majority of the questions were plucked from an [oksoclap](http://oksoclap.co
   * Profiler, JSPerf, Dromaeo
 * If you could master one technology this year, what would it be?
 * What are the differences between Long-Polling, Websockets and SSE?
+  * Long-polling. client send a request to server and server will waiting and reply until get some new.
+  * Websocket: client and server can communicat with each other
+  * SSE: server send event. client send one request and server keep send responses back once have new.
 * Explain the importance of standards and standards bodies.
 * What is FOUC? How do you avoid FOUC?
+  * A flash of unstyled content (FOUC) is an instance where a web page appears briefly with the browser's default styles prior to loading an external CSS stylesheet, due to the web browser engine rendering the page before all information is retrieved. 
+  * 
 * Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
 
 ####[[⬆]](#toc) <a name='html'>HTML Questions:</a>
@@ -111,6 +116,9 @@ The majority of the questions were plucked from an [oksoclap](http://oksoclap.co
 * Have you used or implemented media queries or mobile specific layouts/CSS?
 * Any familiarity with styling SVG?
 * How do you optimize your webpages for print?
+```html
+<link rel="stylesheet" href="print.css" type="text/css" media="print"/>
+```
 * What are some of the "gotchas" for writing efficient CSS?
 * What are the advantages/disadvantages of using CSS preprocessors? (SASS, Compass, Stylus, LESS)
   * If so, describe what you like and dislike about the CSS preprocessors you have used.
