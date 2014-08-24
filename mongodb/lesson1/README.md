@@ -3,6 +3,7 @@
 
 ```js
 mongo  // connent to shell
+mongod  // run mongo server
 
 show dbs  // list all databases
 
