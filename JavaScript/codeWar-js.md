@@ -54,3 +54,14 @@ function Archiver() {
     this.getArchive = function() {return archive;};
 }
 ```
+
+* Javascript singleton
+```js
+var Singleton = function(){
+  if(Singleton.__instance) {
+    return Singleton.__instance;
+  }
+  
+  Singleton.__instance = this;
+};
+```
