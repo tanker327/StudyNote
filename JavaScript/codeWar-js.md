@@ -23,3 +23,5 @@ Array.isArray = function(value) {
  * So every instance will have different copy of that function.
  * Methods in Prototype is single function shared by all the instance. Faster
  * The good part of Methods Within Constructor is that it can access private variables.
+
+* Array.prototype.sort() can sort both number and string
