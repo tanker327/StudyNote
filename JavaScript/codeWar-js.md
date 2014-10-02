@@ -4,3 +4,7 @@ Array.isArray = function(value) {
   return Object.prototype.toString.call(value)==="[object Array]";
 };
 ```
+2.  Arguments in function is not a pure array. It is an Object. It can be convert to array by:
+```js
+ var array = Array.slice.call(arguments,0);
+```
