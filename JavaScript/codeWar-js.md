@@ -25,3 +25,5 @@ Array.isArray = function(value) {
  * The good part of Methods Within Constructor is that it can access private variables.
 
 * Array.prototype.sort() can sort both number and string
+
+* Using < > ==  to compare string/char
