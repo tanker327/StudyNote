@@ -30,8 +30,8 @@ Array.isArray = function(value) {
 * Using < > ==  to compare string/char
 
 * customize getter and setter
-* ```js
-* function Archiver() {
+```js
+function Archiver() {
     var temperature = null;
     var archive = [];
     //TODO: implement "Archiver" as a self-archiving object
