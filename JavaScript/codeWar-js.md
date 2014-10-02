@@ -13,3 +13,8 @@ Array.isArray = function(value) {
 ```js
 [].reduce(function(a,b){return a+b;}, 0);
 ```
+
+4. use slice() smartly 
+```js
+"abcd".slice(-1)==="d"
+```
