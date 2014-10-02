@@ -8,3 +8,8 @@ Array.isArray = function(value) {
 ```js
  var array = Array.slice.call(arguments,0);
 ```
+
+3. reduce() for array. Don't forget the init value 0
+```js
+[].reduce(function(a,b){return a+b;}, 0);
+```
