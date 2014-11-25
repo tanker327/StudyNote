@@ -2,9 +2,128 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Heap Sorting</title>
+
+    <script>
+
+
+
+            function Heap ( array ){
+                var _array = [];
+
+                if(Array.isArray(array)){
+                    heapify(array);
+                }
+
+                this.print = function(){
+                   // console.log(Array.prototype.toString.call(_array));
+                    console.dir(_array);
+                };
+
+
+                function getParentIndex (curIndex){
+                      return curIndex===0 ? null: Math.floor((curIndex-1)/2);
+                }
+
+                function getLeftChildIndex (curIndex){
+                    var index = curIndex*2 +1 ;
+                    return index >= this.array.length? null: index;
+                }
+
+                function getRightChildIndex (curIndex){
+                    var index = curIndex*2 +2 ;
+                    return index >= this.array.length? null: index;
+                }
+
+                function heapify(array){
+                    for(var i=0; i<array.length;i++){
+                        addElement(array[i]);
+                    }
+                }
+
+//                function heapifyNode(index){
+//                    var leftChildIndex = getLeftChildIndex(index),
+//                        rightChildIndex = getRightChildIndex(index),
+//                        max , t;
+//
+//                    if(rightChildIndex === null){
+//                        max = leftChildIndex=== null ? null : leftChildIndex;
+//                    }else{
+//                        max = _array[leftChildIndex]>= _array[rightChildIndex]? leftChildIndex: rightChildIndex;
+//                    }
+//
+//                    if(_array[index]< _array[max]){
+//                        t = _array[index];
+//                        _array[index]=_array[max]
+//                        _array[max]= t;
+//                        return max;
+//                    }
+//
+//                    return index;
+//                }
+
+                function compareWithParent(index){
+                    var parentIndex = getParentIndex(index);
+
+                    if(parentIndex==null) return index;
+
+                    if(_array[parentIndex] < _array[index]){
+                        swap(index, parentIndex);
+                        return parentIndex;
+                    }
+                    return index;
+                }
+
+                function addElement(val){
+                    _array.push(val);
+                    var currentIndex = _array.length- 1,
+                        result;
+                    while(true){
+                        result = compareWithParent(currentIndex);
+                        if(result === currentIndex) break;
+                        else currentIndex = result;
+                    }
+                }
+
+                function swap(indexA, indexB){
+                    var t = _array[indexA];
+                    _array[indexA] =_array[indexB];
+                    _array[indexB] = t;
+                }
+
+
+
+            }
+
+
+    var h = new Heap([4,64,65,2,568,95,35,2]);
+
+
+    var user = {
+        name:"name",
+        getName:function(){
+            console.log(this.name);
+        }
+    }
+
+//     var func = user.getName;
+
+       var func = user.getName.bind(user);
+
+        Function.prototype.bind = Function.prototype.bind || function(context){
+            var self = this;
+
+            return function(){
+                self.apply(content, arguments);
+            }
+        };
+
+    </script>
+
 </head>
 <body>
+
+
 
 </body>
 </html>

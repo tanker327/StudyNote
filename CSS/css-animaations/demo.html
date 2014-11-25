@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        #pic{
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            top:200px;
+            left:200px;
+
+            animation:  bobble 2s infinite;
+
+        }
+
+        @keyframes bobble {
+            0%{
+                transform: translate3d(50px, 40px, 0px);
+            }
+
+            50%{
+                transform: translate3d(50px, 50px, 0px);
+            }
+
+            100%{
+                transform: translate3d(50px, 40px, 0px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+</body>
+
+<div>
+    <img src="../image/Cool.png" alt="" id="pic"/>
+</div>
+
+</html>
