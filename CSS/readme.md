@@ -27,3 +27,16 @@ CSS Animation
 }
 
 ```
+> check lib '-prefix-free' to get the css work for all the web browser.
+
+#Transitions
+
+```
+ #face:hover{
+    transform: translate3d(50px ,0,0);
+    height: 200px;
+    /*transition: all  1s ease-in;*/
+    transition: transform  1s ease-in, height  1s ease-in 1s;
+
+}
+```
