@@ -1,6 +1,10 @@
 #App
 
-Auto restart server : [nodemon](https://www.npmjs.org/package/nodemon)
+[nodemon](https://www.npmjs.org/package/nodemon) : Auto restart server 
+
+[pm2](https://www.npmjs.org/package/pm2) : production process manager 
+
+[http-server](https://www.npmjs.org/package/http-server) : Simple http server
 
 #Lib
 
@@ -15,8 +19,6 @@ Form Validation : [validator](https://www.npmjs.org/package/validator)
 Debug : [debug](https://www.npmjs.org/package/debug)
 
 async: [async](https://www.npmjs.org/package/async)
-
-production process manager : [pm2](https://www.npmjs.org/package/pm2)
 
 tasks scheduler : [cron](https://www.npmjs.org/package/cron)
 
