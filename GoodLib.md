@@ -13,6 +13,10 @@
 Time Display : [Moment.js](http://momentjs.com)
 
 gzip: [compression](https://www.npmjs.org/package/compression)
+```
+var compress = require('compression');
+app.use(compress()); 
+```
 
 Hash password : [bcrypt](https://www.npmjs.org/package/bcrypt)
 
