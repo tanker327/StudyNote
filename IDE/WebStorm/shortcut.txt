@@ -1,0 +1,38 @@
+WebStrome Key shotcut
+
+setting-> keymap
+
+export the setting to save your changes
+
+
+you can change it at : setting -> key map -> ...
+create a live template : setting -> live template
+
+auto compete : ctrl + space
+
+Jump to definition: command + mouse click
+Jump to last edit place: Alt+command + ->
+
+Auto define a variable : Alt + Command + v
+
+trigger the hint: Alt+enter
+
+
+
+Open file:  shift + command + o
+Open class: command+o
+
+Open recent file list: command+e, ctrl + tab
+
+
+command hint: command + shift + a
+
+
+select a word and then a line:  Alt + up
+
+duplicate a line: command + dÅ
+
+remove a line: command + delete
+
+Surround with : alt + command + t
+surround with can be add at setting->live template
