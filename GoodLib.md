@@ -37,3 +37,5 @@ UnderScore & Lo-Dash
 cookie : [cookie](https://www.npmjs.org/package/cookie)
 
 Crypto/Hash/md5: [crypto](from core lib)
+
+parse/stringfy form(query) string: [querystring](http://nodejs.org/api/querystring.html)
