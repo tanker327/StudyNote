@@ -35,3 +35,5 @@ Enable Cors: [cors](https://www.npmjs.org/package/cors)
 UnderScore & Lo-Dash
 
 cookie : [cookie](https://www.npmjs.org/package/cookie)
+
+Crypto/Hash/md5: [crypto](from core lib)
