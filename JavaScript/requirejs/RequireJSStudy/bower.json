@@ -1,0 +1,20 @@
+{
+  "name": "RequireJSStudy",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tanker327/StudyNote",
+  "authors": [
+    "Eric <eric.wu@yieldmo.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.15",
+    "jquery": "~2.1.3"
+  }
+}
