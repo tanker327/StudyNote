@@ -41,3 +41,17 @@ Crypto/Hash/md5: [crypto](from core lib)
 parse/stringfy form(query) string: [querystring](http://nodejs.org/api/querystring.html)
 
 file upload : [formidable](https://www.npmjs.com/package/formidable)
+
+
+
+A few examples of modules I find useful:
+
+validator for validating user input
+sqlite3 for easy & lightweight data persistence  (I use a NoSQL data store like Redis for storing sessions & stuff like that but I like SQLite for holding accounts & user data)
+bcrypt for storing passwords (why bcrypt?)
+i18n for internationalization / localization
+nodemailer with email-templates
+express-subdomains for routing subdomains
+express-expose for exposing JS objects to the client
+gm for validating & resizing uploaded pictures
+marked for inline markdown support in my Jade templates / i18n files
