@@ -42,6 +42,8 @@ parse/stringfy form(query) string: [querystring](http://nodejs.org/api/querystri
 
 file upload : [formidable](https://www.npmjs.com/package/formidable)
 
+Test express : [supertest](https://www.npmjs.com/package/supertest)
+
 
 
 A few examples of modules I find useful:
