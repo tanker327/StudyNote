@@ -9,6 +9,10 @@
 #Express
 
 [express-unless](https://www.npmjs.com/package/express-unless) : Add exception to express middleware.
+[express-jwt](https://github.com/auth0/express-jwt)
+
+#DB
+[sequelize](http://sequelizejs.com) Mysql - DB
 
 #Lib
 
