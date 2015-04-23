@@ -16,6 +16,8 @@
 
 #Lib
 
+[events](https://github.com/Gozala/events)  Node's event emitter for all engines.
+
 [socket.io](https://www.npmjs.org/package/socket.io) 
 
 Time Display : [Moment.js](http://momentjs.com)
