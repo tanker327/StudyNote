@@ -1,3 +1,7 @@
+#API
+Got IP and location:   http://api.hostip.info/get_json.php
+
+
 #App
 
 [nodemon](https://www.npmjs.org/package/nodemon) : Auto restart server 
