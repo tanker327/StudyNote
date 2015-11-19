@@ -58,6 +58,7 @@ file upload : [formidable](https://www.npmjs.com/package/formidable)
 
 Test express : [supertest](https://www.npmjs.com/package/supertest)
 
+make value same as key : [keyMirror](https://github.com/STRML/keyMirror)
 
 
 A few examples of modules I find useful:
