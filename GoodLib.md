@@ -60,6 +60,8 @@ Test express : [supertest](https://www.npmjs.com/package/supertest)
 
 make value same as key : [keyMirror](https://github.com/STRML/keyMirror)
 
+Files names in a dir to object : [requireDir](https://github.com/aseemk/requireDir)
+
 
 A few examples of modules I find useful:
 
